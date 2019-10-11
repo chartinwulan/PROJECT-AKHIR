@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modal.css">
+    <title>Penyakit-Penyakitbual</title>
+
+</head>
+
+<body>
+    <div class="head">
+        <img src="img/lg.png">
+    </div>
+
+    <div class="judul">
+        <h1>Penyakit</h1>
+    </div>
+
+    <div class="a">
+        <ul>
+            <li class="home">
+                <a href="Home.html">Home</a>
+            </li>
+            <li class="help">
+                    <button id="myBtn">Help</button>
+            </li>
+        </ul>
+    </div>
+    <div class="konten">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="Hawardaun.html" class="bb">Hawar Daun</a>
+                </li>
+                <li>
+                    <a href="Karatdaun.html" class="bb">Karat Daun</a>
+                </li>
+                <li>
+                    <a href="Bercakdaun.html">Bercak Daun</a>
+                </li>
+                <li>
+                    <a href="Busukdaun.html">Busuk Daun</a>
+                </li>
+                <li style="background-color: yellowgreen;">
+                    <a href="Penyakitbual.html">Penyakit Bual</a>
+                </li>
+            </ul>
+        </div>
+        <div class="isi">
+            <h3>Penyakit Bual</h3><br>
+            <form action="">
+                <textarea>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque sit ea qui quis amet sed hic aliquid, molestias nihil vel quibusdam, quasi ratione reiciendis magnam illo quod tempore pariatur.
+                </textarea>
+            </form>
+
+        </div>
+    </div>
+    <div class="footer">
+        &copy; Tugas Perancangan Website Kelompok 10
+    </div>
+
+    <div id="myModal" class="modal">
+            <div class="modal-content">
+                <a class="keluar" href="#"></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Assumenda distinctio ex voluptate qui tempore blanditiis voluptas optio quis. <br>
+                    Klik diluar box untuk close</p>
+            </div>
+        </div>
+    
+        <script>
+            var modal = document.getElementById("myModal");
+    
+            var btn = document.getElementById("myBtn");
+    
+            var span = document.getElementsByClassName("keluar")[0];
+    
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+    
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+    
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+</body>
+
+</html>
