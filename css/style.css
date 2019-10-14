@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	font-family: 'Bree Serif', serif;
+}
+header	{
+	background-color: #C5D01A;
+	padding: 10px;
+}
+h1	{
+	margin-bottom: 0px;
+}
+nav ul {
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 20px;
+}
+nav a {
+	color: black;
+	text-decoration: none;
+}
+.logo {
+	width: 1110px;
+	display: inline-block;
+}
+.autentikasi {
+	width: 200px;
+	float: right;
+	display: inline-block;
+	margin-top: -35px;
+}
+.autentikasi a {
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+	margin-right: 10px;
+	background-color: #AB7D00;
+	border-radius: 10px;
+	padding: 6px 15px;
+}
+main {
+	background-image: url(../img/bg.jpg);
+	padding: 20px;
+	background-position: center;
+	height: 580px;
+}
+/*.content {
+	background-color: rgba(180, 180, 180, 0.5);
+	padding: 15px;
+}*/
+.postingan {
+	background-color: rgba(180, 180, 180, 0.75);
+	margin-bottom: 10px;
+	padding: 10px;
+	color: #F65F00;
+}
+.postingan .judul {
+	color: black;
+	font-size: 20px;
+	/*margin-top: 50px;*/
+}
+.content .text {
+	color: #F65F00;
+	position: relative;
+}
+.tips {
+	background-color: rgba(180, 180, 180, 0.5);
+	margin-bottom: 10px;
+	padding: 10px;
+	color: #E3EF22;
+	width: 28%;
+	display: inline-block;
+	margin-right: 25px;
+}
+.tips img {
+	max-width: 100%;
+}
+.tips .judul {
+	color: white;
+	font-size: 20px;
+}
+.content .text {
+	color: #F6FF00;
+	position: relative;
+}
+main h2 {
+	color: white;
+	margin-bottom: 10px;
+}
+main h4 {
+	color: white;
+	margin-bottom: 10px;
+}
+footer {
+	padding: 20px;
+	background-color: #8B8B8B;
+}
+.item {
+	width: 28%;
+	display: inline-block;
+	color: white;
+	font-size: 18px;
+	padding: 20px;
+}
+.item a {
+	text-decoration: none;
+	color: white;
+}
+.copyright {
+	margin-top: 10px;
+	text-align: center;
+}
+.container {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 9px;
+}
+.login {
+	width: 30%;
+	margin-left: 35%;
+	background-color: #808080;
+	padding: 20px;
+	margin-top: 15%;
+}
+.login input {
+	width: calc(100% - 30px);
+	padding: 5px 10px;
+}
+.login button {
+	margin-top: 10px;
+	width: calc(100% - 5px);
+	padding: 5px 10px;
+	background-color: #F56517;
+	border: 1px solid #D3520C;
+}
+.pagination li {
+	display: inline-block;
+	background-color: #E7FF20;
+	padding: 5px 10px;
+}
+.pagination a {
+	color: white;
+	text-decoration: none;
+}
