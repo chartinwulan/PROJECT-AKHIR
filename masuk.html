@@ -1,62 +1,90 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Masuk</title>
 	<link rel="stylesheet" type="text/css" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<!-- <header>
-	<div class="container">
-		<div class="logo">
-			<h1>InheAgriculture <i style="margin-left: 20px;"></i></h1>
+	<header>
+		<div class="container">
+			<div class="head">
+				<img class="lg" src="img/lg.png">
+			</div>
+			<!-- <div class="autentikasi">
+						<a href="masuk.html">Masuk</a>
+						<a href="daftar.html">Daftar</a> 
+					</div> -->
+			<nav>
+				<ul>
+					<li><a href="#" onclick="alertAction()">Beranda</a></li>
+					<li><a href="#" onclick="alertAction()">Diagnosa Penyakit</a></li>
+					<li><a href="#" onclick="alertAction()">Katalog Penyakit</a></li>
+					<li><a href="#" onclick="alertAction()">Hama jagung</a></li>
+				</ul>
+			</nav>
 		</div>
-		<div class="autentikasi">
-			<a href="masuk.html">Masuk</a>
-			<a href="daftar.html">Daftar</a> 
-		</div>
-		<nav>
-			<ul>
-				<li><a href="index.php">Beranda</a></li>
-				<li><a href="agri news.php">Diagnosa Penyakit</a></li>
-				<li><a href="agri news.php">Katalog Penyakit</a></li>
-			</ul>
-		</nav>
-	</div>
-	</header> -->
-<main>
-	<div class="container">
-		<div class="content">
-			<div class="login">
-				<center>
-				<h2>Login</h2>
-				</center>
-				Email :
-				<br>
-				<input type="email">
-				<br>
-				Password :
-				<br>
-				<input type="password">
-				<br>
-				<a href="index.html"><button>Login</button></a>
-				<br>
-				<center>
-				<a href="">lupa password</a>
-				<br>
-				<a href="daftar.html">daftar di sini!</a>
-				</center>
+	</header>
+	<main>
+		<div class="container">
+			<div class="content">
+				<div class="login">
+					<center>
+						<h2>Login</h2>
+					</center>
+					
+					Username :
+					<br>
+					<input type="email" name="email" id="email">
+					<br>
+					Password :
+					<br>
+					<input type="password" name="email" id="password">
+					<br>
+					<a href="index.html"><button>Masuk</button></a>
+
+
+					<br>
+					<br>
+					<center>
+						<a href="">Lupa Password ?</a>
+						<br>
+						<a href="daftar.html">Daftar di Sini..</a>
+					</center>
+				</div>
 			</div>
 		</div>
-	</div>
-</main>
-	
+	</main>
+
 	<footer>
 		<div class="copyright">
 			© Copyright Billy - Chartin
 		</div>
-	</div>
-</footer></body>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		// function validasi() {
+		// 	var email = document.getElementById("email").value;
+		// 	var password = document.getElementById("password").value;
+		// 	if (email == "admin@gmail.com" && password == "admin") {
+		// 		// return true;
+		// 		alert('Selamat Datang admin');
+		// 		window.location.href("index.html");
+		// 	} else {
+		// 		alert('Anda harus mengisi data dengan lengkap !');
+		// 	}
+		// }
+
+		function alertAction() {
+			alert("Login Sek Njirr");
+		}
+	</script>
+
+</body>
+
 </html>

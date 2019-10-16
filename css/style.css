@@ -3,11 +3,12 @@
 	font-family: 'Bree Serif', serif;
 }
 header	{
-	background-color: #C5D01A;
+	background-color: #77926a80;
 	padding: 10px;
 }
 h1	{
 	margin-bottom: 0px;
+	color: white;
 }
 nav ul {
 	text-align: center;
@@ -21,30 +22,47 @@ nav a {
 	color: black;
 	text-decoration: none;
 }
-.logo {
-	width: 1110px;
-	display: inline-block;
+/* .head {
+	padding: 30px;
+	text-align: center;
+	width: 50px;
+} */
+.lg {
+	padding: 30px;
+	text-align: center;
+	height: 120px;
+	margin: -30px auto 0 450px;
 }
 .autentikasi {
 	width: 200px;
 	float: right;
 	display: inline-block;
-	margin-top: -35px;
+	margin-top: -70px;
 }
 .autentikasi a {
 	text-decoration: none;
 	color: black;
 	font-size: 17px;
 	margin-right: 10px;
-	background-color: #AB7D00;
+	background-color: #cb8c9d;
 	border-radius: 10px;
 	padding: 6px 15px;
 }
 main {
-	background-image: url(../img/bg.jpg);
-	padding: 20px;
+	background-image: url(../img/bgr.png);
+	padding: 43px;
 	background-position: center;
-	height: 580px;
+	height: 590px;
+	/* margin-bottom: 50px; */
+	/* background-repeat: no-repeat; */
+}
+.ad {
+	background-image: url(../img/bgr.png);
+	padding: 43px;
+	background-position: center;
+	height: 590px; 
+	margin-bottom: 0px;
+	
 }
 /*.content {
 	background-color: rgba(180, 180, 180, 0.5);
@@ -54,11 +72,15 @@ main {
 	background-color: rgba(180, 180, 180, 0.75);
 	margin-bottom: 10px;
 	padding: 10px;
-	color: #F65F00;
+	font-size: 16pt;
+	
+}
+.postingan h1{
+	color: rgb(251, 255, 0);
 }
 .postingan .judul {
 	color: black;
-	font-size: 20px;
+	font-size: 20pt;
 	/*margin-top: 50px;*/
 }
 .content .text {
@@ -70,16 +92,28 @@ main {
 	margin-bottom: 10px;
 	padding: 10px;
 	color: #E3EF22;
-	width: 28%;
+	width: 30%;
+	height: 40%;
 	display: inline-block;
-	margin-right: 25px;
+	margin: 10px 10px;
+	text-align: center;
 }
 .tips img {
-	max-width: 100%;
+	width: 350px;
+	height: 250px;
+	margin: 10px auto;
 }
 .tips .judul {
 	color: white;
 	font-size: 20px;
+	text-align: left;
+}
+.tips .konten{
+	text-align: left;
+}
+a{
+	text-decoration: none;
+	color: aqua;
 }
 .content .text {
 	color: #F6FF00;
@@ -109,24 +143,34 @@ footer {
 	color: white;
 }
 .copyright {
-	margin-top: 10px;
+	margin-top: 0px;
 	text-align: center;
 }
 .container {
 	width: 80%;
-	margin-left: 10%;
+	margin: auto;
 	padding-top: 9px;
+	
 }
 .login {
 	width: 30%;
 	margin-left: 35%;
 	background-color: #808080;
 	padding: 20px;
-	margin-top: 15%;
+	margin-top: 50px;
 }
 .login input {
 	width: calc(100% - 30px);
 	padding: 5px 10px;
+}
+.login textarea {
+	width: calc(100% - 30px);
+	height: 200px;
+	padding: 5px 10px;
+}
+button a{
+	color: black;
+	text-decoration: none;
 }
 .login button {
 	margin-top: 10px;
@@ -134,13 +178,28 @@ footer {
 	padding: 5px 10px;
 	background-color: #F56517;
 	border: 1px solid #D3520C;
+	cursor: pointer;
 }
 .pagination li {
 	display: inline-block;
-	background-color: #E7FF20;
+	background-color: rgb(251, 255, 0);
 	padding: 5px 10px;
 }
 .pagination a {
-	color: white;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
+}
+.add{
+	text-align: right;
+	margin-right: 28px;
+}
+.konten img{
+	width: 450px;
+	height: 280px;
+}
+.postingan h4{
+	color: black;
+}
+.konten .isi{
+	text-align: justify;
 }
