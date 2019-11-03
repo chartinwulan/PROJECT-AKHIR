@@ -44,7 +44,8 @@
 				<textarea></textarea>
 				<br><br>
 				Insert Gambar :
-				<input type="file">
+				<input type="file" id="inputFile">
+				<img id="image_upload_preview" src="http://placehold.it/100x100" alt="your image" style="width: 100px;"/>
 				<br>
             </form>
           
@@ -60,4 +61,22 @@
 		</div>
 	</div>
 </footer></body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+ function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#image_upload_preview').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#inputFile").change(function () {
+        readURL(this);
+    });
+</script>
 </html>
