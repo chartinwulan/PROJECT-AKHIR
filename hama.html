@@ -28,10 +28,11 @@
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="container" id="list_data" page="">
             <center>
                 <h1>Hama Jagung</h1>
             </center><br>
+            
             <div class="tips">
                 <img src="img/hama.png" alt="">
                 <div class="judul">
@@ -62,6 +63,7 @@
                     facilis. Voluptatibus accusamus magni... <a href="readhama.html">Read More</a>
                 </div>
             </div>
+
             
             <!--<div class="pagination">
 			<ul>
@@ -74,6 +76,9 @@
 			</ul>
 		</div> -->
         </div>
+
+        <button id="more_btn" style="text-align: center;">More</button>
+
     </main>
     <footer>
         <div class="copyright">
@@ -81,6 +86,61 @@
         </div>
         </div>
     </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $("#more_btn").click(function () {
+            var halaman = $("#list_data").attr("page");
+            
+            if (halaman == "" || halaman == NaN) {
+                console.log("hai");
+                halaman = 1;
+            }
+            else {
+                halaman = Number(halaman);
+                halaman+=1;
+            }
+
+            console.log("hal "+halaman);
+
+
+            $("#list_data").attr("page", halaman);
+            if(halaman == 2){
+                $("#more_btn").hide();
+            }
+
+            var url = "json/hama_"+halaman+".json"
+
+            $.ajax({
+                url: url,
+                type: 'GET',
+                dataType: 'json'
+            })
+            .done(function (hama) {
+                console.log("sukses");
+                var data = "";
+                $.each(hama, function (index, val) {
+                    data += `
+                        <div class="tips">
+                            <img src="`+val.gambar+`" alt="">
+                            <div class="judul">
+                                `+val.judul+`
+                            </div>
+                            <div class="konten">
+                                `+val.konten+` <a href="readhama.html">Read More</a>
+                            </div>
+                        </div>
+                    `;  
+                });
+
+                $("#list_data").append(data);
+            })
+            .fail(function () {
+                console.log("error");
+            })
+
+        });
+    </script>
 </body>
 
 </html>

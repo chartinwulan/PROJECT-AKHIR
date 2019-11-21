@@ -52,7 +52,8 @@ main {
 	background-image: url(../img/bgr.png);
 	padding: 43px;
 	background-position: center;
-	height: 590px;
+	/*height: 590px;*/
+	/*overflow: hidden;*/
 	/* margin-bottom: 50px; */
 	/* background-repeat: no-repeat; */
 }
@@ -150,7 +151,7 @@ footer {
 	width: 80%;
 	margin: auto;
 	padding-top: 9px;
-	
+	overflow: hidden;
 }
 .login {
 	width: 30%;

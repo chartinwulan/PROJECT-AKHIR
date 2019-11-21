@@ -1,0 +1,17 @@
+[
+	{
+		"gambar": "img/hama.png",
+		"judul": "Lorem ipsum G",
+		"konten": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium dolore quas magnam facilis. Voluptatibus accusamus magni..."
+	},
+	{
+		"gambar": "img/hama.png",
+		"judul": "Lorem ipsum H",
+		"konten": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium dolore quas magnam facilis. Voluptatibus accusamus magni..."
+	},
+	{
+		"gambar": "img/hama.png",
+		"judul": "Lorem ipsum I",
+		"konten": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusantium dolore quas magnam facilis. Voluptatibus accusamus magni..."
+	}
+]

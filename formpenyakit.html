@@ -47,6 +47,9 @@
 						Insert Gambar :
 						<input type="file" id="inputFile">
 						<img id="image_upload_preview" src="http://placehold.it/100x100" alt="your image" style="width: 100px;"/>
+						<div id="info_file">
+					
+						</div>
 						<br>
 					</form>
 
@@ -64,21 +67,20 @@
 	</footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/uploadGambar.js"></script>
 <script>
- function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
+ 	// function readURL(input) {
+  //       if (input.files && input.files[0]) {
+  //           var reader = new FileReader();
 
-            reader.onload = function (e) {
-                $('#image_upload_preview').attr('src', e.target.result);
-            }
+  //           reader.onload = function (e) {
+  //               $('#image_upload_preview').attr('src', e.target.result);
+  //           }
 
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
+  //           reader.readAsDataURL(input.files[0]);
+  //       }
+  //   }
 
-    $("#inputFile").change(function () {
-        readURL(this);
-    });
+    $("#inputFile").uploadGambar();
 </script>
 </html>
