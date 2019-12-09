@@ -33,21 +33,22 @@
 		<div class="container">
 			<div class="content">
 				<div class="login">
+				<form class="form" action="#" method="POST" onsubmit="validasi();">
+	
 					<center>
 						<h2>Login</h2>
 					</center>
 					
 					Username :
 					<br>
-					<input type="email" name="email" id="email">
+					<input type="text" name="username" id="username" required>
 					<br>
 					Password :
 					<br>
-					<input type="password" name="email" id="password">
+					<input type="password" name="password" id="password" required>
 					<br>
-					<a href="index.html"><button>Masuk</button></a>
-
-
+				</form>	
+					<button type="submit" onclick="document.getElementsByClassName('form')[0].submit(validasi())">Masuk</button>
 					<br>
 					<br>
 					<center>
@@ -59,6 +60,8 @@
 			</div>
 		</div>
 	</main>
+	
+	  
 
 	<footer>
 		<div class="copyright">
@@ -67,19 +70,21 @@
 		</div>
 	</footer>
 
+	
 
 	<script type="text/javascript">
-		// function validasi() {
-		// 	var email = document.getElementById("email").value;
-		// 	var password = document.getElementById("password").value;
-		// 	if (email == "admin@gmail.com" && password == "admin") {
-		// 		// return true;
-		// 		alert('Selamat Datang admin');
-		// 		window.location.href("index.html");
-		// 	} else {
-		// 		alert('Anda harus mengisi data dengan lengkap !');
-		// 	}
-		// }
+	function validasi() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			if (username != "" && password != "" ) {
+				// return true;
+				alert('Selamat Datang Kawan..');
+				setTimeout("location.href='index.html'",10);
+			} else {
+				alert('Anda harus mengisi data dengan lengkap !');
+				window.location.href("masuk.html");
+			}
+		}
 
 		function alertAction() {
 			alert("Logino Sek Njirr");

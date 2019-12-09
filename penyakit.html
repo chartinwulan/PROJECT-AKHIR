@@ -14,7 +14,7 @@
 						<img class="lg" src="img/lg.png">
 					</div>
 		<div class="autentikasi">
-			<a href="masuk.html">Keluar</a>
+			<a href="#modal-one">Keluar</a>
 		</div>
 		<nav>
 			<ul>
@@ -26,8 +26,8 @@
 		</nav>
 	</div>
 </header>
-<main>
-	<div class="container">
+<div class="wrap">
+	<div class="container" id="list_data" page="">
 		<center>
 			<h1>Katalog Penyakit</h1>
 		</center><br>
@@ -72,11 +72,88 @@
 			</ul>
 		</div> -->
 	</div>
-</main>
+	
+	<button id="more_btn" style="text-align: center;">More</button>
+
+</div>
 	<footer>
 		<div class="copyright">
 			© Copyright Billy - Chartin
 		</div>
 	</div>
-</footer></body>
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="modal-one" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-header">
+			<h2>Yakin mau Keluar???</h2>
+			<!-- <a href="#" class="btn-close" aria-hidden="true">x</a> -->
+		  </div>
+		  <div class="modal-body">
+			<p>Klik Yes untuk batal. Klik No untuk batal...</p>
+		  </div>
+		  <div class="modal-footer">
+				<a href="masuk.html"><button>Yes</button></a>
+				<a href="penyakit.html"><button>No</button></a>
+		  </div>
+		</div>
+	  </div>	
+	
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+	$("#more_btn").click(function () {
+		var halaman = $("#list_data").attr("page");
+		
+		if (halaman == "" || halaman == NaN) {
+			console.log("hai");
+			halaman = 1;
+		}
+		else {
+			halaman = Number(halaman);
+			halaman+=1;
+		}
+
+		console.log("hal "+halaman);
+
+
+		$("#list_data").attr("page", halaman);
+		if(halaman == 1){
+			$("#more_btn").hide();
+		}
+
+		var url = "json/penyakit_"+halaman+".json"
+
+		$.ajax({
+			url: url,
+			type: 'GET',
+			dataType: 'json'
+		})
+		.done(function (penyakit) {
+			console.log("sukses");
+			var data = "";
+			$.each(penyakit, function (index, val) {
+				data += `
+					<div class="tips">
+						<img src="`+val.gambar+`" alt="">
+						<div class="judul">
+							`+val.judul+`
+						</div>
+						<div class="konten">
+							`+val.konten+` <a href="readpenyakit.html">Read More</a>
+						</div>
+					</div>
+				`;  
+			});
+
+			$("#list_data").append(data);
+		})
+		.fail(function () {
+			console.log("error");
+		})
+
+	});
+</script>
+</body>
 </html>

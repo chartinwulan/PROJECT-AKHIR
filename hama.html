@@ -15,7 +15,7 @@
                 <img class="lg" src="img/lg.png">
             </div>
             <div class="autentikasi">
-                <a href="masuk.html">Keluar</a>
+                <a href="#modal-one">Keluar</a>
             </div>
             <nav>
                 <ul>
@@ -27,7 +27,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <div class="wrap">
         <div class="container" id="list_data" page="">
             <center>
                 <h1>Hama Jagung</h1>
@@ -76,16 +76,34 @@
 			</ul>
 		</div> -->
         </div>
-
+        
         <button id="more_btn" style="text-align: center;">More</button>
-
-    </main>
+    </div>
+    
     <footer>
         <div class="copyright">
             © Copyright Billy - Chartin
         </div>
         </div>
     </footer>
+
+<!-- Modal -->
+<div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h2>Yakin mau Keluar???</h2>
+            <!-- <a href="#" class="btn-close" aria-hidden="true">x</a> -->
+          </div>
+          <div class="modal-body">
+            <p>Klik Yes untuk batal. Klik No untuk batal...</p>
+          </div>
+          <div class="modal-footer">
+                <a href="masuk.html"><button>Yes</button></a>
+                <a href="hama.html"><button>No</button></a>
+          </div>
+        </div>
+      </div>	
+    
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script>

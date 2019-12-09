@@ -31,25 +31,27 @@
 	<div class="container">
 		<div class="content">
 			<div class="login">
+			<form class="form" action="#" method="POST" onsubmit="validasi();">
 				<center>
 					<h2>Register</h2>
 				</center>
 				Nama Lengkap :
 				<br>
-				<input type="text">
+				<input type="text" id="nama">
 				Username :
 				<br>
-				<input type="email">
+				<input type="email" id="username">
 				<br>
 				Password :
 				<br>
-				<input type="password">
+				<input type="password" id="password">
 				<br>
 				Ulangi Password :
 				<br>
-				<input type="password">
+				<input type="password" id="password2">
 				<br>
-				<a href="masuk.html"><button>Daftar</button></a>
+			</form>
+				<button type="submit" onclick="document.getElementsByClassName('form')[0].submit(validasi())">Daftar</button>
 				<br>
 				<br>
 				<center>
@@ -67,6 +69,21 @@
 </footer>
 
 <script type="text/javascript">
+	function validasi() {
+			var nama = document.getElementById("nama").value;
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			var password2 = document.getElementById("password2").value;
+			if (nama != "" && username != "" && password != "" && password2 != "") {
+				// return true;
+				alert('Silahkan Login');
+				setTimeout("location.href='masuk.html'",10);
+			} else {
+				alert('Anda harus mengisi data dengan lengkap !');
+				window.location.href("daftar.html");
+			}
+		}
+
 	function alertAction() {
 		alert("Daftar Sek Cuuyyy");
 	}
